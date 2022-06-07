@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <item>
+        <file>piqueteWSDL.wsdl</file>
+        <path>/_system/config/wsdl</path>
+        <mediaType>application/wsdl+xml</mediaType>
+        <properties/>
+    </item>
+</resources>

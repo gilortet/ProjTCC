@@ -1,0 +1,49 @@
+openapi: 3.0.1
+info:
+  title: baseInformacao
+  description: Trabalho final do curso
+  contact:
+    name: GilbertoFernandes
+    email: "gilfernandes96gf@gmail.com"
+  version: 1.0.0
+servers:
+  - url: "http://localhost/api"
+    description: base uri
+paths:
+  /arma:
+    summary: /arma
+    delete:
+      operationId: getAllArma
+      parameters: []
+      responses:
+        "200":
+          description: Description
+          content:
+            application/json:
+              schema:
+                type: string
+  /getOnearma:
+    get:
+      responses:
+        default:
+          description: Default response
+  /getAllarma:
+    get:
+      responses:
+        default:
+          description: Default response
+  /insertarma:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response

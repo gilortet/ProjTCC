@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="siicWSDL" groupId="com.example.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>siicWSDL.wsdl</file>
+            <path>/_system/config/wsdl</path>
+            <mediaType>application/wsdl+xml</mediaType>
+            <properties/>
+        </item>
+    </artifact>
+    <artifact name="piqueteWSDL" groupId="com.example.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>piqueteWSDL.wsdl</file>
+            <path>/_system/config/wsdl</path>
+            <mediaType>application/wsdl+xml</mediaType>
+            <properties/>
+        </item>
+    </artifact>
+    <artifact name="baseInfo_schema_json" groupId="com.example.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>baseInfo_schema.json</file>
+            <path>/_system/governance/swagger_files</path>
+            <mediaType>application/json</mediaType>
+            <properties/>
+        </item>
+    </artifact>
+</artifacts>
