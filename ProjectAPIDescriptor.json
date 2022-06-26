@@ -1,0 +1,140 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "baseInformacao",
+    "description": "Trabalho final do curso",
+    "contact": {
+      "name": "GilbertoFernandes",
+      "email": "gilfernandes96gf@gmail.com"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost/api",
+      "description": "base uri"
+    }
+  ],
+  "tags": [
+    {
+      "name": "BaseInformacao",
+      "description": ""
+    },
+    {
+      "name": "Investigacao",
+      "description": ""
+    }
+  ],
+  "paths": {
+    "/arma": {
+      "summary": "/arma",
+      "delete": {
+        "operationId": "getAllArma",
+        "tags": [
+          "BaseInformacao"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Description",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/response"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getOnearma": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "Default response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/response"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getAllarma": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "Default response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/response"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/insertarma": {
+      "post": {
+        "requestBody": {
+          "description": "Sample Payload",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/response"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Default response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/response"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "response": {
+        "required": [
+          "globalReturn",
+          "returnList"
+        ],
+        "type": "object",
+        "properties": {
+          "globalReturn": {
+            "type": "string"
+          },
+          "returnList": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
